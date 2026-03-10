@@ -1,106 +1,106 @@
 Expectations,Keywords
--,pending
+-,
 ,
 ,
 ,
-which applications should I use as a beginner to create my own website or project,pending
-Honestly I would like to learn dirty work. And practical SWE mindsets.,pending
+which applications should I use as a beginner to create my own website or project,web ide frameworks
+Honestly I would like to learn dirty work. And practical SWE mindsets.,se industry workflow
 ,
-Practice writing good architectures smoothly,pending
-"I have little baseline understanding of software engineering, hence it is hard for me to specify detailed aspects of SWE I want to learn. However, I am doing SWE internship in the coming summer, so I want to get prepared for the internship.",pending
+Practice writing good architectures smoothly,design
+"I have little baseline understanding of software engineering, hence it is hard for me to specify detailed aspects of SWE I want to learn. However, I am doing SWE internship in the coming summer, so I want to get prepared for the internship.",se internships unsure
 ,
 ,
 ,
 ,
 ,
-Production frameworks,pending
+Production frameworks,frameworks industry
 ,
 ,
 ,
 ,
-Practical software engineering skills that is highly relevant in industry.,pending
+Practical software engineering skills that is highly relevant in industry.,se industry
 ,
 ,
 ,
-Java OOP,pending
+Java OOP,java oop
 ,
 ,
 ,
 ,
-Learn more about the standard of SWE,pending
+Learn more about the standard of SWE,se industry workflow
 ,
-NIL,pending
-NIL,pending
+NIL,
+NIL,
 ,
-Nil,pending
+Nil,
 ,
-N/A,pending
+N/A,
 ,
-na,pending
-Proper SWE development projects,pending
+na,
+Proper SWE development projects,se workflow
 ,
 ,
-Best practices in SE,pending
+Best practices in SE,se code
 ,
 ,
 ,
 ,
-devops,pending
+devops,devops
 ,
 ,
 ,
-How to manage complexity. How to be a good team member.,pending
+How to manage complexity. How to be a good team member.,design large groupwork soft
 ,
 ,
 ,
 ,
 ,
-Java frameworks frequently used in the modern SWE internships such as Spring?,pending
+Java frameworks frequently used in the modern SWE internships such as Spring?,frameworks java internships
 ,
-Team work,pending
-learn how to develop a software app,pending
-I wish to explore more in this subject as I have never had much experience before. My goal is to gain some proficiency in Software Engineering and get and internship.,pending
+Team work,groupwork soft
+learn how to develop a software app,se code workflow
+I wish to explore more in this subject as I have never had much experience before. My goal is to gain some proficiency in Software Engineering and get and internship.,interest se internships
 ,
 ,
-I would like to learn more about proper software testing techniques.,pending
-"Git, documentation, unit and integration tests",pending
+I would like to learn more about proper software testing techniques.,testing
+"Git, documentation, unit and integration tests",git documentation testing
 ,
-"Formal understanding of SWE Principals, better understanding on how to use Github and collaborate within Github.",pending
-"Using GitHub and itellij more effectively, coding project management",pending
-How to make a scalable software,pending
+"Formal understanding of SWE Principals, better understanding on how to use Github and collaborate within Github.",se git groupwork
+"Using GitHub and itellij more effectively, coding project management",git ide workflow
+How to make a scalable software,performance large
 ,
-"Git version control, Agile, how to work with hardware engineers and real world inputs - e.g. autonomous vehicle camera sensors or iOT devices; of course this should be covered more in depth in Computer Vision but a basic introduction would be nice",pending
+"Git version control, Agile, how to work with hardware engineers and real world inputs - e.g. autonomous vehicle camera sensors or iOT devices; of course this should be covered more in depth in Computer Vision but a basic introduction would be nice",git workflow industry groupwork
 ,
 ,
-NIL,pending
-Learn to utilize more on Git and also to learn how to properly package and have the right architecture in software development.,pending
-Professional Usage of Git and Github. Software Engineering fundamentals and understanding.,pending
+NIL,
+Learn to utilize more on Git and also to learn how to properly package and have the right architecture in software development.,git design
+Professional Usage of Git and Github. Software Engineering fundamentals and understanding.,git se
 ,
-NA,pending
-Software engineering,pending
+NA,
+Software engineering,se
 ,
 ,
-"I want to imbibe good, safe software engineering principles and practices. I want to develop myself not just as an individual programmer but on how to work with others in a bigger project.",pending
-"How to actually properly start a new SWE project, system design, how to properly merge pull requests, how to manage different versions of the same project (if thats even something that people do)",pending
+"I want to imbibe good, safe software engineering principles and practices. I want to develop myself not just as an individual programmer but on how to work with others in a bigger project.",se groupwork soft
+"How to actually properly start a new SWE project, system design, how to properly merge pull requests, how to manage different versions of the same project (if thats even something that people do)",workflow design git se
 ,
-be proficient in SE practices,pending
+be proficient in SE practices,se
 ,
 ,
 ,
 ,
-NA,pending
-"The structure of building a project. I feel like with my education so far, I have been learning a lot about the languages, giving me a good base, but i do not know how to use the knowledge to make my own projects/hackathon participations due to the structure of the tech stack, how to start ideating etc.",pending
+NA,
+"The structure of building a project. I feel like with my education so far, I have been learning a lot about the languages, giving me a good base, but i do not know how to use the knowledge to make my own projects/hackathon participations due to the structure of the tech stack, how to start ideating etc.",se workflow design
 ,
 ,
 ,
-System design and project management,pending
+System design and project management,design workflow
 ,
 ,
-"Just how to properly do a project and whether software engineering is really for me, also want to be able to code on the spot",pending
+"Just how to properly do a project and whether software engineering is really for me, also want to be able to code on the spot",se workflow code unsure
 ,
-Having better software engineering practices and teamwork skills,pending
-Git,pending
-Project organisation and code review.,pending
+Having better software engineering practices and teamwork skills,se groupwork soft
+Git,git
+Project organisation and code review.,workflow code
 ,
 ,
 ,
@@ -108,64 +108,64 @@ Project organisation and code review.,pending
 ,
 ,
 ,
-I want to learn how to use frontend and backend together. I have heard that the programming projects in 2103 are mostly backend only (with not / not a lot of frontend code). I want to be taught react.,pending
-NIL,pending
-NIL,pending
+I want to learn how to use frontend and backend together. I have heard that the programming projects in 2103 are mostly backend only (with not / not a lot of frontend code). I want to be taught react.,backend desktop web frameworks
+NIL,
+NIL,
 ,
 ,
 ,
-git,pending
-"Version control, writing clean and maintainable code in a large codebase, some app/web development",pending
+git,git
+"Version control, writing clean and maintainable code in a large codebase, some app/web development",git code large web
 #NAME?,pending
 ,
 ,
 ,
 ,
 ,
-"flow of software engineering, when we are given a software engineering task, how should we approach it, plan it, then execute it; what are some tools that could help us during the process",pending
+"flow of software engineering, when we are given a software engineering task, how should we approach it, plan it, then execute it; what are some tools that could help us during the process",se workflow design industry
 ,
 ,
-basic software engineering skills and how do effectively work in a team of SWEs to gain skills for internships,pending
+basic software engineering skills and how do effectively work in a team of SWEs to gain skills for internships,se groupwork soft internships
 ,
-"I expect to learn how to use git effectively, eg. how to use pull request etc",pending
-Nil,pending
-NA,pending
+"I expect to learn how to use git effectively, eg. how to use pull request etc",git
+Nil,
+NA,
 ,
 ,
 ,
 ,
-applications of more se concepts,pending
-"I want to learn how to organize and plan projects, mainly the crucial things needed before execution",pending
+applications of more se concepts,se
+"I want to learn how to organize and plan projects, mainly the crucial things needed before execution",workflow design
 ,
 ,
 ,
 ,
-"Proper version control and collaboration on GitHub such as pull requests etc, especially with more than 2 people involved. Software testing",pending
-Teamwork and collaboration!,pending
+"Proper version control and collaboration on GitHub such as pull requests etc, especially with more than 2 people involved. Software testing",git groupwork testing
+Teamwork and collaboration!,groupwork soft
 ,
-I want to learn more about Java in software engineering.,pending
+I want to learn more about Java in software engineering.,java se
 ,
-nil,pending
+nil,
 ,
-Nil,pending
-NIL,pending
-"I expect to learn how to use Git effectively and also at the same time, how to work and manage a software engineering project well",pending
--,pending
-"How software is built from start to finish + general flow of building a software How to write clean, readable and CORRECT code... Exposure to common tools used in industry How to work in teams ( + proper way to use git & github) General good coding practices and habits",pending
-NIL,pending
+Nil,
+NIL,
+"I expect to learn how to use Git effectively and also at the same time, how to work and manage a software engineering project well",git workflow
+-,
+"How software is built from start to finish + general flow of building a software How to write clean, readable and CORRECT code... Exposure to common tools used in industry How to work in teams ( + proper way to use git & github) General good coding practices and habits",se workflow code industry groupwork git
+NIL,
 ,
 ,
 ,
-Nil.,pending
+Nil.,
 ,
-Learn about SWE practices,pending
-Git usage and understand what software engineering is like,pending
+Learn about SWE practices,se
+Git usage and understand what software engineering is like,git se
 ,
-SWE skills that are used in the real world.,pending
-Github as I have no much experience using it.,pending
-Learn more advanced git features.,pending
+SWE skills that are used in the real world.,industry se
+Github as I have no much experience using it.,git
+Learn more advanced git features.,git
 ,
-"Using Java as the main language to create an industrial standard project.  Master the skills of project management, including the use of Git.",pending
+"Using Java as the main language to create an industrial standard project.  Master the skills of project management, including the use of Git.",java industry workflow git
 ,
 ,
 ,
@@ -178,155 +178,155 @@ Learn more advanced git features.,pending
 ,
 ,
 ,
-Git  Proper Software Practices,pending
-Utilizing the Git system.,pending
+Git  Proper Software Practices,git code se
+Utilizing the Git system.,git
 ,
-"I really want to learn how I can make sure my programs are correct (almost like proving that its right). Right now my development workflow is more akin to test driven development, I write tests, I code, I check if it passes the tests and I repeat. It feels as if I am writing patches on top of my code to fit that specific test case. I know that's not right. And I want to change the way I code to move away from this direction of coding. Mostly because as my projects get more serious, this patching method doesn't seem particularly appealing because now I need to prove to other people that my program is correct especially when the program is so complex that is can't fit in any humans working memory. For instance, I am currently working on this programming language compiler: github.com/kavishsathia/star, and I feel like I am just writing patches on top of patches to make the compiler work. I want to learn the right way to code, and I hope this course can help me with that!",pending
+"I really want to learn how I can make sure my programs are correct (almost like proving that its right). Right now my development workflow is more akin to test driven development, I write tests, I code, I check if it passes the tests and I repeat. It feels as if I am writing patches on top of my code to fit that specific test case. I know that's not right. And I want to change the way I code to move away from this direction of coding. Mostly because as my projects get more serious, this patching method doesn't seem particularly appealing because now I need to prove to other people that my program is correct especially when the program is so complex that is can't fit in any humans working memory. For instance, I am currently working on this programming language compiler: github.com/kavishsathia/star, and I feel like I am just writing patches on top of patches to make the compiler work. I want to learn the right way to code, and I hope this course can help me with that!",testing workflow code design large
 ,
 ,
-"I hope to learn the confidence to handle large codebases... currently, when I download a GitHub repo and discover that it's a mess, my first instinct is to leave my workstation for the rest of the day.",pending
-* Project management skills specific to software engineering  * How to structure a project using GitHub  * Better understand the level of effort required for larger scale projects,pending
--,pending
+"I hope to learn the confidence to handle large codebases... currently, when I download a GitHub repo and discover that it's a mess, my first instinct is to leave my workstation for the rest of the day.",large
+* Project management skills specific to software engineering  * How to structure a project using GitHub  * Better understand the level of effort required for larger scale projects,workflow git large se
+-,
 ,
-"Working with teammates, delivering quality code, common SWE practices such as CI/CD.",pending
+"Working with teammates, delivering quality code, common SWE practices such as CI/CD.",groupwork code devops
 ,
-How to make working software from scratch,pending
+How to make working software from scratch,se
 ,
 ,
 ,
 ,
-Through this course I expect to learn about software design principles that allow me to improve my teamwork skill.,pending
+Through this course I expect to learn about software design principles that allow me to improve my teamwork skill.,design groupwork soft
 ,
 ,
-"Using Git, learning how to write effective documentation",pending
+"Using Git, learning how to write effective documentation",git documentation
 ,
 ,
 ,
-1. Knowledge about git  2. Testing (eg. unit test)  ... ...,pending
-"Hopefully Rust but since it's Java I know it's not happening. Otherwise anything about optimizing performance-critical systems, concurrency, multithreading, and network stuff.",pending
+1. Knowledge about git  2. Testing (eg. unit test)  ... ...,git testing
+"Hopefully Rust but since it's Java I know it's not happening. Otherwise anything about optimizing performance-critical systems, concurrency, multithreading, and network stuff.",java performance network
 ,
--,pending
+-,
 ,
-"Writing clean, readable and modular code  very good feature outlines and descriptions   advanced usage of git and github   collaborating as a team effectively while using GitHub   thinking in terms of systems and not just low level logic",pending
-N.A.,pending
+"Writing clean, readable and modular code  very good feature outlines and descriptions   advanced usage of git and github   collaborating as a team effectively while using GitHub   thinking in terms of systems and not just low level logic",code documentation git groupwork design workflow
+N.A.,unsure
 ,
 ,
 ,
 ,
 ,
-"Software Engineering Lifecycle, Development Methodologies, Git/GitHub and possibly testing.",pending
+"Software Engineering Lifecycle, Development Methodologies, Git/GitHub and possibly testing.",workflow git testing se
 ,
 ,
 ,
-Strong fundamentals of Software Engineering which can allow me to branch to certain relation or perhaps more specific topics of software engineering and also helping me to secure a better internship in the future,pending
+Strong fundamentals of Software Engineering which can allow me to branch to certain relation or perhaps more specific topics of software engineering and also helping me to secure a better internship in the future,se internships
 ,
 ,
-"I want to learn more about cloud computing tools (AWS, Microsoft Azure...)",pending
+"I want to learn more about cloud computing tools (AWS, Microsoft Azure...)",backend
 ,
 ,
--,pending
+-,
 ,
 ,
--,pending
+-,
 ,
 ,
 ,
-Good software enegineering principles  How to make good software for users  How to push projects (self or school) online onto platforms such as github for my own use or showcase  Some UI principles to follow when making software,pending
-nil,pending
-API design.,pending
+Good software enegineering principles  How to make good software for users  How to push projects (self or school) online onto platforms such as github for my own use or showcase  Some UI principles to follow when making software,se ui git
+nil,
+API design.,design
 ,
 ,
 ,
-Testing methodology,pending
-"I want to learn SE principles and maybe defensive programming, how to use git proficiently and UML",pending
+Testing methodology,testing
+"I want to learn SE principles and maybe defensive programming, how to use git proficiently and UML",se security git uml
 ,
-"Scrum workflows, confluence, jira, github and git power user, basically software project management etc stuff",pending
-no,pending
-CI/CD (Github Actions),pending
+"Scrum workflows, confluence, jira, github and git power user, basically software project management etc stuff",workflow git documentation groupwork
+no,unsure
+CI/CD (Github Actions),devops git
 ,
 ,
 ,
-Just good practices for software engineering.,pending
-Just general skills that will assist me in taking up internships,pending
+Just good practices for software engineering.,se code
+Just general skills that will assist me in taking up internships,internships
 ,
-git and gui design,pending
-nil,pending
-Modern SWE Team Practices,pending
-nil,pending
+git and gui design,git ui
+nil,
+Modern SWE Team Practices,workflow groupwork se
+nil,
 ,
-software engineering,pending
-"Anything and everything, looking to just dig into whatever I can learn!",pending
-nil,pending
-NA,pending
+software engineering,se
+"Anything and everything, looking to just dig into whatever I can learn!",interest
+nil,
+NA,
 ,
 ,
-I hope to learn more about web interface programming or related topics,pending
+I hope to learn more about web interface programming or related topics,web ui
 ,
 ,
 ,
-NIL,pending
+NIL,
 ,
 ,
 ,
 ,
-"To be honest, I always struggled with coding since CS2030S and CS2040S. However, after i re-modded CS2030S, i found a bit more joy coding java out and passing the test case. I really hope to be able to learn how to make something like a website or application because I haven't been able to personally experience how a code can translate into the digital things that we use frequently. I did not do orbital also so I did not get a chance to experience that.",pending
+"To be honest, I always struggled with coding since CS2030S and CS2040S. However, after i re-modded CS2030S, i found a bit more joy coding java out and passing the test case. I really hope to be able to learn how to make something like a website or application because I haven't been able to personally experience how a code can translate into the digital things that we use frequently. I did not do orbital also so I did not get a chance to experience that.",code cs2030 dsa java web desktop orbital
 ,
 ,
 ,
-nil,pending
-Use Git better,pending
+nil,
+Use Git better,git
 ,
--,pending
-Learning modern tech stacks,pending
-Good SWE practices,pending
-How to document user and server guide and use Git and GitHub for collaboration,pending
-Nil,pending
--,pending
-Nil,pending
-"React, using cloud computing services",pending
-NIL,pending
+-,
+Learning modern tech stacks,frameworks
+Good SWE practices,se code
+How to document user and server guide and use Git and GitHub for collaboration,documentation git groupwork
+Nil,
+-,
+Nil,
+"React, using cloud computing services",frameworks web backend
+NIL,
 ,
 ,
 ,
-Using AI in software dev,pending
-N/A,pending
-"Git, CI/CD",pending
-nil,pending
-I want to learn what code reviews are about.,pending
+Using AI in software dev,ai
+N/A,
+"Git, CI/CD",git devops
+nil,
+I want to learn what code reviews are about.,code workflow
 ,
 ,
-Nil,pending
-Nil,pending
-Hosting backend servers using tools like AWS or other tools that a normal person who have to pay,pending
-NA,pending
-How to use git terminal professionally,pending
+Nil,
+Nil,
+Hosting backend servers using tools like AWS or other tools that a normal person who have to pay,backend devops
+NA,
+How to use git terminal professionally,git
 ,
 ,
-Learning to write clean readable code that is scalable.,pending
+Learning to write clean readable code that is scalable.,code performance
 ,
-interview prep,pending
+interview prep,internships
 ,
-NIL,pending
-* Steps to take when developing a program (eg. workflow / planning etc)  * Proficiency in Git / CI / CD  * Learning new libraries or frameworks,pending
+NIL,
+* Steps to take when developing a program (eg. workflow / planning etc)  * Proficiency in Git / CI / CD  * Learning new libraries or frameworks,workflow git devops frameworks
 ,
-"Learning what does the role ""software engineer"" really do",pending
+"Learning what does the role ""software engineer"" really do",se industry
 ,
-"Develop projects that will be useful for portfolio and internships, maybe gain more insights whether i want to pursue SE in the future.",pending
-nil,pending
+"Develop projects that will be useful for portfolio and internships, maybe gain more insights whether i want to pursue SE in the future.",internships interest se
+nil,
 ,
-Git and how to properly maintain code. And learn more about CI/CD pipelines,pending
-Writing Unit Test effectively,pending
-how to work better in big groups for a single project,pending
-How to be a better software engineer; common practices,pending
+Git and how to properly maintain code. And learn more about CI/CD pipelines,git code devops
+Writing Unit Test effectively,testing
+how to work better in big groups for a single project,groupwork soft
+How to be a better software engineer; common practices,se industry
 ,
 ,
 ,
 ,
 ,
-"SWE terminology, practices etc.",pending
+"SWE terminology, practices etc.",se
 ,
-Nil,pending
-git  docker  react,pending
+Nil,
+git  docker  react,git docker frameworks web
 ,
 ,
 ,
@@ -334,100 +334,100 @@ git  docker  react,pending
 ,
 ,
 ,
-Na,pending
-to learn how to work in teams and understand all the necessary features when designing a system,pending
+Na,
+to learn how to work in teams and understand all the necessary features when designing a system,groupwork design
 ,
-I hope to learn the more advanced features of github as well as how to write a proper user guide that would actually attract potential users.,pending
--,pending
+I hope to learn the more advanced features of github as well as how to write a proper user guide that would actually attract potential users.,git documentation
+-,
 ,
 ,
-Just software engineering skills required in the professional world,pending
+Just software engineering skills required in the professional world,se industry
 ,
 ,
-nil,pending
+nil,
 ,
 ,
-"I hope to hone my software engineering practices and cultivate good habits with regards to submitting pull requests, etc.",pending
+"I hope to hone my software engineering practices and cultivate good habits with regards to submitting pull requests, etc.",se git
 ,
-"Software Development Life Cycle, Git, CI/CD, Standard practices",pending
+"Software Development Life Cycle, Git, CI/CD, Standard practices",workflow git devops se
 ,
 ,
 ,
 ,
 ,
 ,
-Coding in a team setting of more than 2 team members. (I have not done any larger scale projects before),pending
--,pending
+Coding in a team setting of more than 2 team members. (I have not done any larger scale projects before),groupwork large
+-,
 ,
-Software engineering a project with a team.,pending
-NIL,pending
+Software engineering a project with a team.,se groupwork workflow
+NIL,
 ,
 ,
-"How to maintain a Github repo (in fact, what does it mean by repo health/build passing in certain Github repos?)  What template should I use when submitting issues/PRs?  How should I design a software so that other programmers can continue to build on it in the future?",pending
+"How to maintain a Github repo (in fact, what does it mean by repo health/build passing in certain Github repos?)  What template should I use when submitting issues/PRs?  How should I design a software so that other programmers can continue to build on it in the future?",git devops workflow design
 ,
--,pending
+-,
 ,
 ,
 ,
-How to develop software and how SE function in teams.,pending
-Git version control,pending
+How to develop software and how SE function in teams.,se groupwork workflow
+Git version control,git
 ,
 ,
 ,
-design patterns,pending
+design patterns,design
 ,
-nil,pending
-Get better at debugging,pending
+nil,
+Get better at debugging,debugging
 ,
--,pending
+-,
 ,
 ,
 ,
-"Specifically software engineering, more on github and building an application in Java.",pending
+"Specifically software engineering, more on github and building an application in Java.",se git java
 ,
-Nil,pending
+Nil,
 ,
 ,
 ,
 ,
 ,
-Na,pending
+Na,
 ,
-Nil,pending
-Programming best practices and formally learning SWE concepts,pending
+Nil,
+Programming best practices and formally learning SWE concepts,code se
 ,
-NA,pending
-Nil,pending
+NA,
+Nil,
 ,
-Github and Git,pending
-"Backend programming, Java, c++/c, git, github",pending
-Allowing me to manage my backend better,pending
-NA,pending
+Github and Git,git
+"Backend programming, Java, c++/c, git, github",backend java git
+Allowing me to manage my backend better,backend
+NA,
 ,
 ,
-Integrating AI agents into modern SE development.,pending
+Integrating AI agents into modern SE development.,ai se
 ,
-"SWE principles, CI/CD",pending
-Improve my coding ability,pending
-"I want to move beyond just writing functional code and learn how to properly organize large codebases using strict Software Architecture and Design patterns.  I am also eager to master advanced Git internals, set up proper CI/CD workflows, and improve my soft skills(like communication) within a software team.",pending
+"SWE principles, CI/CD",se devops
+Improve my coding ability,code
+"I want to move beyond just writing functional code and learn how to properly organize large codebases using strict Software Architecture and Design patterns.  I am also eager to master advanced Git internals, set up proper CI/CD workflows, and improve my soft skills(like communication) within a software team.",design large git devops soft groupwork
 ,
 ,
 ,
-Git.,pending
-front end and backend skills and the entire pipeline that a swe build,pending
-How to build softwares from ground,pending
+Git.,git
+front end and backend skills and the entire pipeline that a swe build,backend web workflow
+How to build softwares from ground,se design
 ,
 ,
--,pending
-Software engineering skills,pending
-NA,pending
-I hope to become more familiar with Git. I hope to build some practical projects that can really be used in real life (most importantly to expose myself to the from-design-to-deployment process).,pending
-NIL,pending
-Git & frontend tool & backend tool,pending
-Nope,pending
+-,
+Software engineering skills,se
+NA,
+I hope to become more familiar with Git. I hope to build some practical projects that can really be used in real life (most importantly to expose myself to the from-design-to-deployment process).,git workflow devops industry
+NIL,
+Git & frontend tool & backend tool,git web backend frameworks
+Nope,unsure
 ,
-Working more efficiently with git and using proper software engineering principles in my code,pending
+Working more efficiently with git and using proper software engineering principles in my code,git se code
 ,
-real life internship skills or tools,pending
-Good Software Engineering Practices,pending
+real life internship skills or tools,internships industry
+Good Software Engineering Practices,se
 .,pending

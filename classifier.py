@@ -94,12 +94,11 @@ _BLANK_VALUES: frozenset[str] = frozenset({"-", "nil", "none", "null", "n/a", "n
 
 
 def is_blank(text: str) -> bool:
-    """Return True if the text is empty or contains a recognised null-like sentinel."""
+    """Return True if the text is empty or is exactly a recognised null-like sentinel
+    (ignoring surrounding whitespace and punctuation)."""
     if not text:
         return True
-    text_lower = text.strip().lower()
-    # Check if any sentinel is a substring
-    return any(blank in text_lower for blank in _BLANK_VALUES)
+    return text.strip(".,!?;:'/\" ").lower() in _BLANK_VALUES
 
 
 # ---------------------------------------------------------------------------
@@ -138,9 +137,7 @@ def classify_batch(
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user",   "content": user_message},
-                ],
-                temperature=0,
-                max_tokens=max(120, 40 * len(indexed_texts)),
+                ]
             )
             break  # success
         except RateLimitError as exc:
@@ -236,6 +233,11 @@ def process_csv(
     batches = [rows[i:i + batch_size] for i in range(0, total, batch_size)]
 
     processed = 0
+    n_blank = 0
+    n_cached = 0
+    n_api = 0
+    n_pending = 0
+    n_errors = 0
     for batch in batches:
         # Resolve empty rows and cache hits immediately; collect uncached texts.
         to_classify: list[tuple[int, str]] = []  # (batch-local index, text)
@@ -244,15 +246,18 @@ def process_csv(
             text = (row.get("Expectations", "") or "").strip()
             if is_blank(text):
                 row["Keywords"] = ""
+                n_blank += 1
             else:
                 cache_key = hashlib.sha256(text.encode("utf-8")).hexdigest()
                 if cache_key in cache:
                     row["Keywords"] = cache[cache_key]
+                    n_cached += 1
                 else:
                     to_classify.append((j, text))
 
         # One API call covers all uncached rows in the batch.
         if to_classify:
+            n_api += len(to_classify)
             try:
                 result_map = classify_batch(client, to_classify, model)
                 for j, text in to_classify:
@@ -260,8 +265,11 @@ def process_csv(
                     batch[j]["Keywords"] = keywords
                     cache_key = hashlib.sha256(text.encode("utf-8")).hexdigest()
                     cache[cache_key] = keywords
+                    if keywords == "pending":
+                        n_pending += 1
             except Exception as exc:  # noqa: BLE001
                 print(f"  API error: {exc}. Marking batch rows as 'pending'.")
+                n_errors += len(to_classify)
                 for j, _text in to_classify:
                     batch[j]["Keywords"] = "pending"
 
@@ -282,13 +290,33 @@ def process_csv(
         if delay > 0 and processed < total:
             time.sleep(delay)
 
-    with open(output_file, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
+    try:
+        with open(output_file, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+    except PermissionError:
+        raise SystemExit(
+            f"\nError: Cannot write to '{output_file}' — the file may be open in another program (e.g. Excel).\n"
+            "Close the file and re-run. All API results are saved in the cache so no calls will be repeated."
+        )
 
-    print(f"\nDone! Output written to: {output_file}")
-    print(f"Cache saved to:          {cache_file}")
+    n_classified = n_api - n_errors - n_pending
+    print(f"""
+─────────────────────────────
+ Summary
+─────────────────────────────
+ Total rows        : {total}
+ Blank / skipped   : {n_blank}
+ Served from cache : {n_cached}
+ Sent to API       : {n_api}
+   ↳ Classified    : {n_classified}
+   ↳ Pending       : {n_pending}
+   ↳ API errors    : {n_errors}
+─────────────────────────────
+ Output : {output_file}
+ Cache  : {cache_file}
+─────────────────────────────""")
 
 
 # ---------------------------------------------------------------------------
