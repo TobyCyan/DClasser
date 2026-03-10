@@ -1,5 +1,7 @@
 # DClasser
 
+> **Note:** This project is part of a course assignment exploring the use of AI tools to prompt and orchestrate other AI tools — specifically, using an LLM-powered script to classify free-text student responses at scale.
+
 AI-powered keyword classifier for student expectations. Reads an `expectations.csv` file, sends each student response to the OpenAI API, and writes space-separated keywords back into a `Keywords` column.
 
 ## Requirements
