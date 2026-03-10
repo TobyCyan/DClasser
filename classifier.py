@@ -20,7 +20,7 @@ import json
 import argparse
 from pathlib import Path
 
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -110,9 +110,12 @@ def classify_batch(
     client: OpenAI,
     indexed_texts: list[tuple[int, str]],
     model: str,
+    max_retries: int = 5,
 ) -> dict[int, str]:
     """
     Classify multiple texts in a single API call.
+    Retries on rate-limit errors with exponential backoff.
+    Raises SystemExit immediately on quota exhaustion.
     indexed_texts: list of (batch-local index, text)
     Returns a dict mapping each index to its keyword string.
     """
@@ -128,15 +131,31 @@ def classify_batch(
         f"{numbered}\n\nOutput:"
     )
 
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user",   "content": user_message},
-        ],
-        temperature=0,
-        max_tokens=max(120, 40 * len(indexed_texts)),
-    )
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user",   "content": user_message},
+                ],
+                temperature=0,
+                max_tokens=max(120, 40 * len(indexed_texts)),
+            )
+            break  # success
+        except RateLimitError as exc:
+            body = getattr(exc, "body", {}) or {}
+            if body.get("code") == "insufficient_quota":
+                raise SystemExit(
+                    "\nError: OpenAI quota exhausted. Check your billing at "
+                    "https://platform.openai.com/account/billing\n"
+                    "Progress has been saved to the cache — re-run once quota is restored."
+                ) from exc
+            if attempt == max_retries - 1:
+                raise
+            wait = 2 ** (attempt + 1)
+            print(f"  Rate limited. Retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+            time.sleep(wait)
 
     raw = response.choices[0].message.content.strip()
     result_map: dict[int, str] = {}
@@ -287,8 +306,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--output", "-o",
-        default=None,
-        help="Path to the output CSV file (default: overwrites the input file)",
+        default="results.csv",
+        help="Path to the output CSV file (default: results.csv)",
     )
     parser.add_argument(
         "--model", "-m",
@@ -324,7 +343,7 @@ def main() -> None:
     if not Path(args.path).exists():
         raise SystemExit(f"Error: Input file '{args.path}' not found.")
 
-    output_file = args.output or args.path
+    output_file = args.output or "results.csv"
     client = OpenAI(api_key=api_key)
 
     if args.batch < 1:
