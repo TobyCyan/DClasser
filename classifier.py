@@ -94,8 +94,12 @@ _BLANK_VALUES: frozenset[str] = frozenset({"-", "nil", "none", "null", "n/a", "n
 
 
 def is_blank(text: str) -> bool:
-    """Return True if the text is empty or a recognised null-like sentinel."""
-    return not text or text.lower() in _BLANK_VALUES
+    """Return True if the text is empty or contains a recognised null-like sentinel."""
+    if not text:
+        return True
+    text_lower = text.strip().lower()
+    # Check if any sentinel is a substring
+    return any(blank in text_lower for blank in _BLANK_VALUES)
 
 
 # ---------------------------------------------------------------------------
