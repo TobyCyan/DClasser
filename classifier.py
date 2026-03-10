@@ -89,6 +89,15 @@ Keywords and meanings:
 {KEYWORDS_DESCRIPTION}"""
 
 
+# Sentinel values treated as blank (case-insensitive, after stripping whitespace).
+_BLANK_VALUES: frozenset[str] = frozenset({"-", "nil", "none", "null", "n/a", "na"})
+
+
+def is_blank(text: str) -> bool:
+    """Return True if the text is empty or a recognised null-like sentinel."""
+    return not text or text.lower() in _BLANK_VALUES
+
+
 # ---------------------------------------------------------------------------
 # Core classification logic
 # ---------------------------------------------------------------------------
@@ -210,7 +219,7 @@ def process_csv(
 
         for j, row in enumerate(batch):
             text = (row.get("Expectations", "") or "").strip()
-            if not text:
+            if is_blank(text):
                 row["Keywords"] = ""
             else:
                 cache_key = hashlib.sha256(text.encode("utf-8")).hexdigest()
@@ -238,8 +247,8 @@ def process_csv(
             processed += 1
             text = (row.get("Expectations", "") or "").strip()
             keywords = row.get("Keywords", "")
-            if not text:
-                print(f"[{processed:>{pad}}/{total}] (empty) → ''")
+            if is_blank(text):
+                print(f"[{processed:>{pad}}/{total}] (blank) → ''")
             else:
                 preview = text[:70].replace("\n", " ")
                 print(f"[{processed:>{pad}}/{total}] {preview!r} → {keywords!r}")
