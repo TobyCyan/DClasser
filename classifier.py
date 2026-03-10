@@ -30,40 +30,40 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 
 KEYWORDS_DESCRIPTION = """\
-ai: AI tools in software engineering
-backend: Backend development, cloud services, building servers
-code: Coding skills, programming best practices, maintainability
-cs2030: CS2030 variants (e.g. CS2030S)
-database: Databases, SQL, data management
-debugging: Debugging/troubleshooting code
-desktop: Desktop apps, GUI, frontend, fullstack
-design: Software design, design patterns, product/feature design
-documentation: Writing documentation
-docker: Containerization with Docker
-devops: CI/CD, deployment, DevOps practices
-dsa: Data structures and algorithms, CS2040 variants
-frameworks: Software frameworks (React, Angular, Django, Flask, Spring)
-git: Version control systems
-groupwork: Teamwork, collaboration, group projects
-ide: IDEs (VSCode, IntelliJ, Eclipse)
-industry: Real-world SE practices
-internships: Resume/portfolio projects, job preparation
-interest: Interest in software engineering
-java: Java programming language
-large: Explicit mention of large-scale software
-network: Networking concepts
+ai: AI/ML tools in SE
+backend: backend/cloud/servers
+code: coding skills/best practices
+cs2030: CS2030/CS2030S module
+database: databases/SQL/data
+debugging: debugging/troubleshooting
+desktop: desktop/GUI/frontend/fullstack
+design: software design/patterns
+documentation: writing docs
+docker: Docker/containerisation
+devops: CI/CD/deployment/DevOps
+dsa: data structures/algorithms/CS2040
+frameworks: React/Angular/Django/Flask/Spring
+git: version control/Git
+groupwork: teamwork/collaboration
+ide: IDEs/VSCode/IntelliJ
+industry: real-world SE practices
+internships: resume/portfolio/job prep
+interest: interest in SE
+java: Java language
+large: large-scale software
+network: networking concepts
 orbital: Orbital-style projects
-oop: Object-oriented programming
-performance: Performance, efficiency, scalability
-security: Secure coding practices
-soft: Soft skills (communication, time management)
-se: General software engineering
-testing: Software testing, unit tests, TDD
-web: Web development explicitly mentioned
-workflow: SDLC, Agile, project workflows
-ui: User interface / UX
+oop: object-oriented programming
+performance: performance/scalability
+security: secure coding
+soft: soft skills/communication
+se: general software engineering
+testing: testing/TDD/unit tests
+web: web development
+workflow: SDLC/Agile/project workflow
+ui: UI/UX design
 uml: UML diagrams
-unsure: Student unsure of expectations"""
+unsure: student unsure"""
 
 VALID_KEYWORDS: set[str] = {
     "ai", "backend", "code", "cs2030", "database", "debugging", "desktop",
